@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<title>Registration Form</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="Style.css">
+<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 2px;
+}
+</style>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Movie Mates</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a class="w3-bar-item w3-button" href="Home.html">Home</a>
+	  <a class="w3-bar-item w3-button" href="RegistrationForm.html">Registration Form</a>
+      <a class="w3-bar-item w3-button" href="Trailers.html">Movie Trailers</a>
+      <a class="w3-bar-item w3-button" href="ContactForm.html">Contact</a>
+	  <a class="w3-bar-item w3-button" href="About.html">About</a>
+	</div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image center" src="LoginRegistrationForm.jpg" alt="Registration Form" width="800" height="400">
+</header>
+<!-- Page content -->
+<div class="w3-content">
+
+  <!-- About Section -->
+    <div>
+      <p class="w3-large">Want to know more about your favorite movies? Want to get updates on the latest and upcoming movies? Then this is the perfect place for you! You can also interact with people with similar interests and transfer information with others. All you have to do is join us by registering through the Registration Form below.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Contact Section -->
+  <div class="w3-container LeftMargin RightMargin">
+    <h1 style="color: #db0416">Registration Form</h1>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="First Name" required name="First Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Last Name" required name="Last Name"></p>
+      <p class="w3-text-grey w3-hide-medium" style = "margin-left: 10px">Gender &nbsp; &nbsp;<input type="radio" name="gender" value="Male">Male &nbsp; &nbsp;<input type="radio" name="gender" value="Female"> Female </p>
+	  <p><input class="w3-input w3-padding-16" type="email" placeholder="Email Id" required name="Email Id"></p>
+      <p><input class="w3-input w3-padding-16" type="tel" placeholder="Phone Number" required name="Phone Number"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Address" required name="Address"></p>
+      <p><input class="w3-input w3-padding-16" type="password" placeholder="Password" required name="Password" minlength="8" required>
+	  <p><input class="w3-input w3-padding-16" type="password" placeholder="Confirm Password" required name="Password" minlength="8" required>
+	  <p class="w3-text-grey w3-hide-medium" style = "margin-left: 10px">Preferred Languages (Choose from the list below.)<br> <br>
+	  <select name="Languages" class="w3-text-grey w3-hide-medium" multiple>
+			<option value="English">English</option>
+			<option value="Spanish">Spanish</option>
+			<option value="Chinese">Chinese</option>
+			<option value="Hindi">Hindi</option>
+	  </select>
+	  <p class="w3-text-grey w3-hide-medium" style = "margin-left: 10px">How would you like us to notify you? (You can select both) &nbsp; &nbsp
+	  <input id="Mail" type="checkbox" name="notify[]" value="Mail"/><label for="Mail">Mail</label> &nbsp; &nbsp;
+	  <input id="TextMessage" type="checkbox" name="languages[]" value="Text Message" /><label for="TextMessage">Text Message</label> </p>
+	  <p><button class="w3-button w3-light-grey w3-section" type="submit">Submit</button></p>
+    </form>
+	<p>Once you have registered go ahead and login. Search for your desired movies and bookmark them. Based on your searches and favorites we will send you regular updates when there is something exciing. Also let us know if something is bothering you, we will contact you as soon as possible and resolve the issue. Here are some other ways to register,</p>
+    <ul>
+	<li>Phone Number - +1(999)999-9999</li>
+	<li>Email - <a href = "mailto:moviemates@gmail.com">moviemates@gmail.com</a></li>
+	<li>Address - 999 Movie Street, Plot 9, Mates, Tx</li>
+	</ul>
+	</div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>
