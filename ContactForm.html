@@ -3,8 +3,7 @@
 <title>Contact Form</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="Style.css">
-<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="NewStyle.css">
 <style>
 body {font-family: "Times New Roman", Georgia, Serif;}
 h1, h2, h3, h4, h5, h6 {
@@ -18,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
   <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
     <a href="#home" class="w3-bar-item w3-button">Movie Mates</a>
     <!-- Right-sided navbar links. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
+    <div class="w3-right">
       <a class="w3-bar-item w3-button" href="Home.html">Home</a>
 	  <a class="w3-bar-item w3-button" href="RegistrationForm.html">Registration Form</a>
       <a class="w3-bar-item w3-button" href="Trailers.html">Movie Trailers</a>
@@ -29,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 </div>
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-  <img class="w3-image center" src="CFImage.jpg" alt="Contact Form" width="800" height="400">
+  <img class="w3-image center" src="CFImage.jpg" alt="Contact Form" width="600" height="300">
 </header>
 <!-- Page content -->
 <div class="w3-content">
@@ -45,15 +44,17 @@ h1, h2, h3, h4, h5, h6 {
   <!-- Contact Section -->
   <div class="w3-container LeftMargin RightMargin" id="contact">
     <h1 style="color: #db0416">Contact Form</h1>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="First Name" required name="First Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Last Name" required name="Last Name"></p>
-      <p><input class="w3-input w3-padding-16" type="email" placeholder="Email Id" required name="Email Id"></p>
-      <p><input class="w3-input w3-padding-16" type="tel" placeholder="Phone Number" required name="Phone Number"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+    <form method="post" action="insert.php">
+	  <p><input class="w3-input w3-padding-16" type="text" placeholder="First Name" required name="First_Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Last Name" name="Last_Name"></p>
+      <p><input class="w3-input w3-padding-16" type="email" placeholder="Email Id" required name="Email_Id"></p>
+      <p><input class="w3-input w3-padding-16" type="tel" placeholder="Phone Number" required name="Phone_Number"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" name="Subject"></p>
       <p><textarea class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></textarea></p>
-      <p class="w3-text-grey w3-hide-medium" style = "margin-left: 10px">How would you like us to contact you if necessary? <br><input type="radio" name="contact" value="Email">Email <br><input type="radio" name="contact" value="Phone"> Phone </p>
-	  <p><button class="w3-button w3-light-grey w3-section" type="submit">Submit</button></p>
+      <p class="w3-text-grey w3-hide-medium" style = "margin-left: 10px">How would you like us to contact you if necessary? <br>
+	    <input type="radio" name="Contact" required value="Email">Email<br>
+		<input type="radio" name="Contact" value="Phone"> Phone</p>
+	  <p><button class="w3-button w3-light-grey w3-section" type="submit" name="Submit">Submit</button></p>
     </form>
 	<p>Here are some others ways for you to contact us,</p>
     <ul>
@@ -68,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-32">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p><a href="About.html" title="About" target="_blank" class="w3-hover-text-green">About</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="ContactForm.html" title="Contact Form" target="_blank" class="w3-hover-text-green">Contact Us</a></p>
 </footer>
 
 </body>
