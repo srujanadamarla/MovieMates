@@ -55,15 +55,15 @@ h1, h2, h3, h4, h5, h6 {
       <p><input class="w3-input w3-padding-16" type="password" placeholder="Password" required name="Password" minlength="8" required>
 	  <p><input class="w3-input w3-padding-16" type="password" placeholder="Confirm Password" required name="Password" minlength="8" required>
 	  <p class="w3-text-grey w3-hide-medium" style = "margin-left: 10px">Preferred Languages (Choose from the list below.)<br> <br>
-	  <select name="Languages" class="w3-text-grey w3-hide-medium" multiple>
-			<option value="English">English</option>
-			<option value="Spanish">Spanish</option>
-			<option value="Chinese">Chinese</option>
-			<option value="Hindi">Hindi</option>
+	  <select class="w3-text-grey w3-hide-medium" multiple>
+			<option name="Languages" value="English">English</option>
+			<option name="Languages" value="Spanish">Spanish</option>
+			<option name="Languages" value="Chinese">Chinese</option>
+			<option name="Languages" value="Hindi">Hindi</option>
 	  </select>
 	  <p class="w3-text-grey w3-hide-medium" style = "margin-left: 10px">How would you like us to notify you? (You can select both) &nbsp; &nbsp
-	  <input id="Mail" type="checkbox" name="notify[]" value="Mail"/><label for="Mail">Mail</label> &nbsp; &nbsp;
-	  <input id="TextMessage" type="checkbox" name="languages[]" value="Text Message" /><label for="TextMessage">Text Message</label> </p>
+	  <input id="Mail" type="checkbox" name="notify" value="Mail"/><label for="Mail">Mail</label> &nbsp; &nbsp;
+	  <input id="TextMessage" type="checkbox" name="notify" value="Text Message" /><label for="TextMessage">Text Message</label> </p>
 	  <p><button class="w3-button w3-light-grey w3-section" type="submit">Submit</button></p>
     </form>
 	<p>Once you have registered go ahead and login. Search for your desired movies and bookmark them. Based on your searches and favorites we will send you regular updates when there is something exciing. Also let us know if something is bothering you, we will contact you as soon as possible and resolve the issue. Here are some other ways to register,</p>
